@@ -1,5 +1,3 @@
-console.log("hello Mike")
-
 class BSTNode{
     constructor(value, left=null, right=null){
         this.value = value;
