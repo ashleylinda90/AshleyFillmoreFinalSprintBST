@@ -38,29 +38,7 @@ class BinarySearchTree{
     constructor(){
         this.root = null;
     }
-//     insert(value){
-//         const helper = (node) => {
-//             if (value === node.value) {
-//                 throw new Error("Illegal operation! Can't have an equal vaule!")
-//             } else if (value < node.value) {
-//                 if (node.left === null) {
-//                     node.left = new BSTNode(value);
-//                 } else {
-//                     helper(node.left);
-//                 }
-//             } else {
-//                 if (node.right === null) {
-//                     node.right = new BSTNode(value);
-//                 } else {
-//                     helper(node.right);
-//                 }
-//             }
-//         };
-//         if (this.root === null) {
-//             this.root = new BSTNode(value);
-//         } else {
-//             helper(this.root)
-//         }
+
         insert(value){
             const helper = (node) => {
                 if ( node === null) {
