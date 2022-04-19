@@ -12,9 +12,13 @@
  app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {
-    res.render('index');
-})
+    res.render('index', {
+        world: "World"
+    });
+});
 
  app.listen(8000, function() {
-     console.log(`Listening on port: 8000.`)
+     console.log(`Listening on port: 8000 .`)
  })
+
+ // comment
