@@ -13,7 +13,10 @@
 
 app.get('/', function(req, res) {
     res.render('index', {
-        world: "World"
+        people: [
+            { name: "Dave" }, 
+            { name: "Jerry" }, 
+        ]
     });
 });
 

@@ -1,5 +1,23 @@
-<h1>EJS hello <%= world %> on port 8000</h1>
+// can be chnaged of deleted.
+<h1>EJS hello World on port 8000</h1>
+
+// input field and submit button. 
 <h4>Please insert, and submit, a bunch of comma seperated numbers.
 </h4>
 <input type="text">
-<button>Submit</button>
+<button>Submit</button> 
+</br>
+</br>
+
+// displays an list/array of objects, and an if statement to test if name is "Dave".
+<ul>
+    <% for (let person of people) { %>
+        <% if ( person.name === "Dave") { %>
+        <li>This is definitly <%= person.name %>!</li>
+        <% } else { %>
+            <li>This is definitly not Dave! This is <%= person.name %>.</li>
+
+       <% } %>
+
+<% } %>
+</ul>
