@@ -1,0 +1,39 @@
+/* * {
+    margin: 0px;
+    padding: 0px;
+} */
+
+/********* BST PAGE **********/
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Permanent Marker", sans-serif;
+    font-size: 2em;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+#bstpage {
+    font-family: "BIZ UDPMincho", sans-serif;
+    font-size: 3em;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+#bstinput {
+    padding-left: 30px;
+    font-size: 1.5em;
+}
+
+#bstsearchbutton {
+    margin-left: 10px;
+}
+
+footer {
+    text-align: center;
+    font-family: "Cookie", sans-serif;
+    font-size: 1.5em;
+    color: gray;
+    padding-top: 50px;
+}
