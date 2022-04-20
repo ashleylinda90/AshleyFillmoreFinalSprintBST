@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "node main.js",
+    "start": "nodemon server.js",
     "test": "jest --coverage"
   },
   "repository": {
@@ -24,6 +24,7 @@
     "express": "^4.17.3",
     "express-ejs-layouts": "^2.5.1",
     "jest": "^27.5.1",
+    "mongoose": "^6.3.0",
     "nodemon": "^2.0.15"
   }
 }
