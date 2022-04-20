@@ -1,6 +1,7 @@
 // routes page
 const express = require('express');
 const app = express();
+const bst = require('../scripts/bst');
 
 // main root route.
 app.get('/', (req, res) => {
@@ -21,11 +22,17 @@ app.get('/results', (req, res) => {
   res.render('results', { results });
 });
 
-app.post('/results', (req, res) => {
+app.post('/results', async (req, res) => {
   let input = req.body.input;
   let split = input.split(',');
   let results = split;
-  res.render('results', { results });
+  let newArray = [];
+  results.forEach((char) => {
+    newArray.push(parseInt(char, 10));
+  });
+
+  let bstArray = await bst.test(newArray);
+  res.render('results', { bstArray });
 });
 
 module.exports = app;
