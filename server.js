@@ -13,7 +13,7 @@
  app.use(cors());
  app.use(expressLayouts);
  
-
+// set template engine
  app.set('views', path.join(__dirname,'views'));
  app.set('view engine', 'ejs');
 
@@ -40,10 +40,10 @@ app.get('/results', (req, res) => {
 // Public folder for images.
 app.use(express.static('public'))
 
-// input route
+// results route
 app.use('/results', resultsRouter); // may have to change input to the second route needed. (bst output).
 
-app.listen(8000, function() {
+app.listen(8000, () => {
     console.log(`Listening on port: 8000 .`)
     })
 
