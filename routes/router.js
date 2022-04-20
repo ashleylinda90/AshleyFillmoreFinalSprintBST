@@ -20,5 +20,11 @@ app.get('/router', (req, res) => {
     res.render('router');
 });
 
+
+app.post('/bst', (req, res) => {
+    res.render('bst');
+});
+
+
 module.exports = app;
 
