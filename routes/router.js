@@ -12,14 +12,20 @@ app.get('/bst', (req, res) => {
   res.render('bst');
 });
 
-app.get('/results', (req, res) => {
-  res.render('results');
-});
-
-
 app.post('/bst', (req, res) => {
-    res.render('bst');
+  res.render('bst');
 });
 
+app.get('/results', (req, res) => {
+  let results = [];
+  res.render('results', { results });
+});
+
+app.post('/results', (req, res) => {
+  let input = req.body.input;
+  let split = input.split(',');
+  let results = split;
+  res.render('results', { results });
+});
 
 module.exports = app;

@@ -4,7 +4,11 @@
     <%- include('./partials/navbar.ejs') %>
     <main>
       <h1>Hello This is the Results Page</h1>
-      <div id="resultsCon"></div>
+      <div id="resultsCon">
+        <% if (results.length > 0) { %> <% results.forEach(result =>{%>
+        <p><%= result %></p>
+        <% }) %> <% } %>
+      </div>
     </main>
     <%- include('./partials/footer.ejs') %>
   </body>
