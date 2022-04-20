@@ -16,4 +16,10 @@ app.get('/results', (req, res) => {
   res.render('results');
 });
 
+
+app.post('/bst', (req, res) => {
+    res.render('bst');
+});
+
+
 module.exports = app;
