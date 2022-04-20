@@ -1,27 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    // can be chnaged of deleted.
-<h1>EJS hello World on port 8000</h1>
-
-<link rel="stylesheet" href="styles.css">
-
-// input field and submit button. 
-<h4>Please insert, and submit, a bunch of comma seperated numbers.
-</h4>
-<input type="text">
-<button>Submit</button> 
-</br>
-</br>
-
-<h3>This is the child of the index file.</h3>
-
-<a href="/results"><button>Previous</button></a>
-</body>
+<html>
+  <%- include('./partials/header.ejs') %>
+  <body>
+    <%- include('./partials/navbar.ejs') %>
+    <main>
+      <h1>Hello This is the Home Page</h1>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+  </body>
 </html>

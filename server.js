@@ -1,34 +1,26 @@
- const express = require('express');
- const bodyParser = require('body-parser');
- const cors = require('cors');
- const path = require('path');
- const expressLayouts = require('express-ejs-layouts');
- const resultsRouter = require('./routes/router');
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
 
+const express = require('express');
+const app = express();
 
- const app = express();
+// Sets port number for local host!
+const port = process.env.PORT || 3000;
 
+app.use(express.static('public'));
+// extended true lets us do whatever we like, if false we cant
+// post "nested objects"
+app.use(express.urlencoded({ extended: true }));
 
- app.use(bodyParser());
- app.use(cors());
- app.use(expressLayouts);
- 
+app.set('view engine', 'ejs');
 
-// set template engine
- app.set('views', path.join(__dirname,'views'));
- app.set('view engine', 'ejs');
-
-
-// Public folder for images.
-app.use(express.static('public'))
-
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}!`);
+});
 
 const indexRouter = require('./routes/router');
+// const postgresRouter = require('./routes/stockPostgres');
+
 app.use('/', indexRouter);
-
-
-app.listen(8000, () => {
-    console.log(`Listening on port: 8000 .`)
-    })
-
-// comment
+// app.use('/postgres', postgresRouter);
