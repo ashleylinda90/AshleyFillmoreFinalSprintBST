@@ -29,8 +29,12 @@ app.get('/', (req, res) => {
 });
 
 // about route. 
-app.get('/about', function(req, res) {
-    res.render('about');
+app.get('/bst', (req, res) => {
+    res.render('bst');
+});
+
+app.get('/results', (req, res) => {
+    res.render('results');
 });
 
 // Public folder for images.
