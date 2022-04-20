@@ -1,4 +1,13 @@
-// can be chnaged of deleted.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    // can be chnaged of deleted.
 <h1>EJS hello World on port 8000</h1>
 
 <link rel="stylesheet" href="styles.css">
@@ -11,18 +20,8 @@
 </br>
 </br>
 
-// displays an list/array of objects, and an if statement to test if name is "Dave".
-<ul>
-    <% for (let person of people) { %>
-        <% if ( person.name === "Dave") { %>
-        <li>This is definitly <%= person.name %>!</li>
-        <% } else { %>
-            <li>This is definitly not Dave! This is <%= person.name %>.</li>
-       <% } %>
-
-<% } %>
-</ul>
-
-<h3>This is the child view file.</h3>
+<h3>This is the child of the index file.</h3>
 
 <a href="/results"><button>Previous</button></a>
+</body>
+</html>
