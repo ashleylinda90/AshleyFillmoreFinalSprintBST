@@ -1,4 +1,28 @@
+/*********** HOME PAGE ***********/
 
+#bsthome {
+    text-align: center;
+    padding-top: 30px;
+    font-family: "BIZ UDPMincho", sans-serif;
+    font-size: 3em;
+}
+
+#bstdesc {
+    text-align: center;
+    font-family: "Square Peg", sans-serif;
+    font-size: 2em;
+}
+
+#wikipage {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .5em;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /********* BST PAGE **********/
 
