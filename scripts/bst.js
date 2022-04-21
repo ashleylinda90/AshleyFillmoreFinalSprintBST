@@ -78,7 +78,7 @@ class BinarySearchTree {
 //   console.log(JSON.stringify(bst, null, 2));
 // }
 
-async function testInput(input) { // renamed this function from test to testInput.
+async function testInput(input) { // renamed this function from test to testInput to avoid Jest testing errors.
   let bst = new BinarySearchTree();
   input.forEach((element) => {
     bst.insert(element);
