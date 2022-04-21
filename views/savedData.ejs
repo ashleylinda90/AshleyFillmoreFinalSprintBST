@@ -2,7 +2,14 @@
   <%- include('./partials/header.ejs') %>
   <body>
     <%- include('./partials/navbar.ejs') %>
-    <main></main>
+    <main>
+      <% if (totalData.length > 0) { %> <% totalData.forEach(bst =>{ %>
+      <div class="bst">
+        <p><%= bst.input %></p>
+        <pre><%= bst.output %></pre>
+      </div>
+      <% }) %> <% } %>
+    </main>
     <%- include('./partials/footer.ejs') %>
   </body>
 </html>

@@ -3,6 +3,9 @@ const express = require('express');
 const app = express();
 const bst = require('../scripts/bst');
 
+// databases
+const BSTDal = require('../services/postgres.dal');
+
 // main root route.
 app.get('/', (req, res) => {
   res.render('index');
@@ -35,12 +38,15 @@ app.post('/results', async (req, res) => {
   });
 
   let bstArray = await bst.testInput(newArray);
+  // storing to db
+  await BSTDal.addBST(input, bstArray);
   res.render('results', { bstArray });
 });
 
 // saved data route
-app.get('/savedData', (req, res) => {
-  res.render('savedData');
+app.get('/savedData', async (req, res) => {
+  let totalData = await BSTDal.getBSTinfo();
+  res.render('savedData', { totalData });
 });
 
 module.exports = app;
