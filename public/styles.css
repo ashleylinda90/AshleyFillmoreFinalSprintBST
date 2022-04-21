@@ -1,7 +1,4 @@
-/* * {
-    margin: 0px;
-    padding: 0px;
-} */
+
 
 /********* BST PAGE **********/
 
@@ -29,6 +26,22 @@
 
 #bstsearchbutton {
     margin-left: 10px;
+}
+
+/********* RESULTS PAGE *********/
+
+#bstresults {
+    font-family: "BIZ UDPMincho", sans-serif;
+    font-size: 3em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+}
+
+pre {
+    margin-left: 50px;
+    font-size: 1.3em;
+    font-family: "BIZ UDPMincho", sans-serif
 }
 
 footer {
