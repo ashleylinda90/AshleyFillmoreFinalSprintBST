@@ -5,8 +5,8 @@
     <main>
       <% if (totalData.length > 0) { %> <% totalData.forEach(bst =>{ %>
       <div class="bst">
-        <p><%= bst.input %></p>
-        <pre><%= bst.output %></pre>
+        <p>input's: <%= bst.input %></p>
+        <p>Created BST: <pre><%= bst.output %></pre> </p>
       </div>
       <% }) %> <% } %>
     </main>
