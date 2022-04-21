@@ -64,19 +64,16 @@ class BinarySearchTree {
   }
 }
 
-// function main() {
-//   let bst = new BinarySearchTree();
-//   bst.insert(1);
-//   bst.insert(2);
-//   bst.insert(3);
-//   bst.insert(4);
-//   bst.insert(5);
-//   bst.insert(6);
-//   bst.insert(7);
-//   bst.insert(8);
-//   bst.insert(9);
-//   console.log(JSON.stringify(bst, null, 2));
-// }
+function main() {
+  let bst = new BinarySearchTree();
+  bst.insert(1);
+  bst.insert(2);
+  bst.insert(3);
+  bst.insert(4);
+  bst.insert(5);
+  bst.insert(6);
+  // console.log(JSON.stringify(bst, null, 2));
+}
 
 async function testInput(input) {
   // renamed this function from test to testInput to avoid Jest testing errors.
@@ -91,4 +88,5 @@ async function testInput(input) {
 
 module.exports = {
   testInput,
+  BinarySearchTree,
 };
