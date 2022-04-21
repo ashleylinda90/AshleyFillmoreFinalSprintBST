@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-// about route.
+// home route.
 app.get('/bst', (req, res) => {
   res.render('bst');
 });
@@ -17,6 +17,7 @@ app.post('/bst', (req, res) => {
   res.render('bst');
 });
 
+// results route
 app.get('/results', (req, res) => {
   let results = [];
   res.render('results', { results });
@@ -37,6 +38,7 @@ app.post('/results', async (req, res) => {
   res.render('results', { bstArray });
 });
 
+// saved data route
 app.get('/savedData', (req, res) => {
   res.render('savedData');
 });
