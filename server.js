@@ -19,7 +19,7 @@ app.listen(port, () => {
   console.log(`Server is listening on port ${port}!`);
 });
 
-const indexRouter = require('./routes/router');
+const indexRouter = require('./routes/routes');
 // const postgresRouter = require('./routes/stockPostgres');
 
 app.use('/', indexRouter);

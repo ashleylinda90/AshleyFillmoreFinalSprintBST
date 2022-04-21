@@ -34,7 +34,7 @@ app.post('/results', async (req, res) => {
     newArray.push(parseInt(char, 10));
   });
 
-  let bstArray = await bst.test(newArray);
+  let bstArray = await bst.testInput(newArray);
   res.render('results', { bstArray });
 });
 

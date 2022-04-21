@@ -78,7 +78,7 @@ class BinarySearchTree {
 //   console.log(JSON.stringify(bst, null, 2));
 // }
 
-async function test(input) {
+async function testInput(input) { // renamed this function from test to testInput.
   let bst = new BinarySearchTree();
   input.forEach((element) => {
     bst.insert(element);
@@ -90,5 +90,5 @@ async function test(input) {
 // main();
 
 module.exports = {
-  test,
+  testInput,
 };
