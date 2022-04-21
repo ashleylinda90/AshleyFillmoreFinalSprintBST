@@ -37,4 +37,8 @@ app.post('/results', async (req, res) => {
   res.render('results', { bstArray });
 });
 
+app.get('/savedData', (req, res) => {
+  res.render('savedData');
+});
+
 module.exports = app;
