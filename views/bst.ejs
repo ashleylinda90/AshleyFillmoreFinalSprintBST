@@ -3,12 +3,12 @@
   <body>
     <%- include('./partials/navbar.ejs') %>
     <main>
-      <h1 id="bstpage">Hello! Input any amount of numbers in any order to create a BST!</h1>
+      <h1 id="bstpage">Hello! Input any amount of comma-separated numbers in any order to create a BST!</h1>
       <form action="/results" method="POST">
         <div id="bstinput">
           <label for="input">Numbers:</label>
           <input type="input" id="input" name="input" required />
-        <button id="bstsearchbutton" type="submit">Search</button>
+        <button id="bstsearchbutton" type="submit">Create My BST</button>
       </div>
       </form>
     </main>
