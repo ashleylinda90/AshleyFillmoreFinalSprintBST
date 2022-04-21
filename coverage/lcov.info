@@ -10,7 +10,7 @@ FN:42,(anonymous_6)
 FN:43,(anonymous_7)
 FN:67,main
 FN:78,testInput
-FN:80,(anonymous_10)
+FN:81,(anonymous_10)
 FNF:11
 FNH:7
 FNDA:5,(anonymous_0)
@@ -63,13 +63,12 @@ DA:71,0
 DA:72,0
 DA:73,0
 DA:74,0
-DA:79,0
 DA:80,0
 DA:81,0
-DA:83,0
+DA:82,0
 DA:84,0
 DA:89,1
-LF:45
+LF:44
 LH:25
 BRDA:2,0,0,5
 BRDA:2,1,0,5

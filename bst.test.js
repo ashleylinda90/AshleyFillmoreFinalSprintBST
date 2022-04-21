@@ -13,7 +13,7 @@ test('test the inputs of the bst', () => {
     expect(newBst.root.right.value).toBe(4);
     expect(newBst.root.right.left.value).toBe(3);
     expect(newBst.root.right.right.value).toBe(5);
-    console.log(newBst)
+    console.log(newBst, null, 2)
 });
 
 

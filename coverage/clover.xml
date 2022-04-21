@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1650568282181" clover="3.2.0">
-  <project timestamp="1650568282182" name="All files">
-    <metrics statements="45" coveredstatements="25" conditionals="16" coveredconditionals="12" methods="11" coveredmethods="7" elements="72" coveredelements="44" complexity="0" loc="45" ncloc="45" packages="1" files="1" classes="1"/>
+<coverage generated="1650568861680" clover="3.2.0">
+  <project timestamp="1650568861680" name="All files">
+    <metrics statements="44" coveredstatements="25" conditionals="16" coveredconditionals="12" methods="11" coveredmethods="7" elements="71" coveredelements="44" complexity="0" loc="44" ncloc="44" packages="1" files="1" classes="1"/>
     <file name="bst.js" path="/Users/michaeloreilly/Desktop/VSCode/SD3/ADS/SprintFinalSD3_Kennedy/scripts/bst.js">
-      <metrics statements="45" coveredstatements="25" conditionals="16" coveredconditionals="12" methods="11" coveredmethods="7"/>
+      <metrics statements="44" coveredstatements="25" conditionals="16" coveredconditionals="12" methods="11" coveredmethods="7"/>
       <line num="3" count="5" type="stmt"/>
       <line num="4" count="5" type="stmt"/>
       <line num="5" count="5" type="stmt"/>
@@ -43,10 +43,9 @@
       <line num="72" count="0" type="stmt"/>
       <line num="73" count="0" type="stmt"/>
       <line num="74" count="0" type="stmt"/>
-      <line num="79" count="0" type="stmt"/>
       <line num="80" count="0" type="stmt"/>
       <line num="81" count="0" type="stmt"/>
-      <line num="83" count="0" type="stmt"/>
+      <line num="82" count="0" type="stmt"/>
       <line num="84" count="0" type="stmt"/>
       <line num="89" count="1" type="stmt"/>
     </file>
