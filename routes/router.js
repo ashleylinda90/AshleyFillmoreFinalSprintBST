@@ -24,6 +24,8 @@ app.get('/results', (req, res) => {
 
 app.post('/results', async (req, res) => {
   let input = req.body.input;
+  // test input for all nums
+  // if (input != all nums ){render=bst{message.error{ "error" }}}
   let split = input.split(',');
   let results = split;
   let newArray = [];
