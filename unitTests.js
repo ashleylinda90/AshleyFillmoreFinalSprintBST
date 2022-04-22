@@ -1,3 +1,5 @@
+//
+
 const { BinarySearchTree } = require('./scripts/bst');
 
 test('test the inputs of the bst', () => {

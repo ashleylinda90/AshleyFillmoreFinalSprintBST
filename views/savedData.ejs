@@ -5,8 +5,8 @@
     <main>
       <% if (totalData.length > 0) { %> <% totalData.forEach(bst =>{ %>
       <div class="bst">
-        <p>input's: <%= bst.input %></p>
-        <p>Created BST: <pre><%= bst.output %></pre> </p>
+        <p id="savedinput">INPUT: <%= bst.input %></p>
+        <p id="savedinput">BINARY SEARCH TREE: </p><pre><%= bst.output %></pre>
       </div>
       <% }) %> <% } %>
     </main>

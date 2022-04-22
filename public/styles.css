@@ -75,6 +75,7 @@ img {
 pre {
     text-align: center; 
     margin-left: 50px; 
+    margin-top: 50px;
     font-size: 1.3em;
     font-family:'Courier New', Courier, monospace;
 }
@@ -85,4 +86,13 @@ footer {
     font-size: 1.5em;
     color: gray;
     padding-top: 50px;
+}
+
+/*********** SAVED BSTs **********/
+
+#savedinput {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.5em;
+    font-weight: bolder;
 }
