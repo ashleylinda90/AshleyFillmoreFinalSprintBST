@@ -6,7 +6,7 @@ const express = require('express');
 const app = express();
 
 // Sets port number for local host!
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 // extended true lets us do whatever we like, if false we cant
